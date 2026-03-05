@@ -1,3 +1,7 @@
+<head>
+        <link rel="stylesheet" href="{{ asset('css/header.css') }}">
+</head>
+
 <header class="header-container">
 
     <img class="Logo" src="{{ asset('images/logo.png') }}" alt="Logo" width="75" height="75">
