@@ -2,16 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-<<<<<<< HEAD
-use App\Http\Controllers\PageController;
-Route::get('/', function () {
-    return view('welcome');
-});
 
-
-
-Route::get('/catalog', [PageController::class, 'catalog'])->name('catalog');
-=======
 
 Route::get('/catalog', function () {
     return view('catalog');
@@ -34,5 +25,3 @@ Route::get('/product-view', function () {
     return view('Product_view');
 });
 
-// ->middleware(['auth', 'verified'])->name('product_view');
->>>>>>> 366b2abd8f49c55abea58e3a2798b21ed2186409

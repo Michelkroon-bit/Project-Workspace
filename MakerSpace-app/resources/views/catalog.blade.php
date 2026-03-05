@@ -7,7 +7,6 @@
 <body>
     <?php 
         @include('partials/header.php');
-    echo 'hello world'
     ?>
     hello world
 </body>
