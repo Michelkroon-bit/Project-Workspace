@@ -15,10 +15,10 @@
 
 <div class="Product">
 
-    <h1 class="product-name">Test Print</h1>
+    <h1 class="product-name">BoyckeIsEI</h1>
     
     <div class="image-wrapper">
-        <p style="color: #858585;" class="creator">Created by: Test Creator</p>
+        <p style="color: #858585;" class="creator">Created by: Eggman</p>
         <img style="width: 350px; height: 350px;" src="{{ asset('images/No_Image_Available.jpg') }}" alt="image-of-product">
         
         <div class="thumbnail-row">
@@ -31,7 +31,7 @@
 
     <div class="rest">
         <p style="font-size: xx-large; margin-top: 125px; margin-left: 10px; color: white;" class="description"><span>Product</span> Description</p>
-        <p style="font-size: medium; margin-left: 10px; color: white;" class="price">Estimated print time: 2 hours</p>
+        <p style="font-size: medium; margin-left: 10px; color: white;" class="price">Estimated print time: 20 hours</p>
 
         <label for="type_of_fillament" style="margin-left: 10px; margin-bottom: ; color: white;">Select a preferred fillament type <br></label>
         <select style="margin-left: 10px; margin-top: 20px; width: 220px;" name="type_of_fillament" id="type_of_fillament">
