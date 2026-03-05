@@ -14,6 +14,7 @@
             <div class="filtermenu">
                 <div class="searchbarfilter">
                     <input type="text" placeholder="Zoek op titel, studentnummer...">
+                    <button>Ok</button>
                 </div>
             </div>
             <div class="itemsoverview">

@@ -40,9 +40,18 @@ body {
         width: 75%;
         border-radius: 10px;
 }
-
+.searchbarfilter {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.searchbarfilter button {
+    width: 50px;
+    border: none;
+    border-radius: 10px;
+}
 .searchbarfilter input {
-    width: 100%;
+    width: 90%;
     height: 40px;
     border-radius: 10px;
     border: none;
