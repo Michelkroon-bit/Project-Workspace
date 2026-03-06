@@ -1,16 +1,39 @@
-body{
-    background-color: #070707;
-    margin-bottom: 25px;;
-}
+
 header{
-    
+    width: 100%;
     background-color: #121212;
     display: flex;
     align-items: center;   /* verticaal centreren */
-    gap: 0px;             /* ruimte tussen logo en tekst */
-    height: 75px;
+    justify-content: center;
+    height: 120px;
     color: #ffffff;
-    padding: 0 15px;
+    flex-direction: column;
+
+}
+
+.header-info-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+
+
+    span {
+        font-size: 21px;
+    }
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    width: 1440px;
+}
+
+.header-logo-container {
+    align-items: center;
+    display: flex;
 }
 
 .header-right{
@@ -19,38 +42,43 @@ header{
     display: flex;
 }
 
-.inbox{
-    background-color: #1A1A1A;
-    color: #ffffff;
-    padding: 15px 15px;
-    border-radius: 5px;
-    text-decoration: none; /* verwijder onderstreping */
-}
-
-.profile{
-    background-color: #1A1A1A;
-    color: #ffffff;
-    padding: 15px 15px;
-    border-radius: 5px;
-    text-decoration: none; /* verwijder onderstreping */
-}
-
 .sub-header {
-    
+    height: 70px;
     background-color: #1A1A1A;
     display: flex;
-    justify-content: flex-end; /* alles naar rechts */
+    justify-content: center; /* alles naar rechts */
     align-items: center;
-    padding: 10px 10px;
-
     margin-bottom: 25px;
     }
 
-.sub-header a {
-    gap: 0px;
-    margin-right: 100px;
-    text-decoration: none;
-    font-size: 16px;
-    color: #858585;
+.sub-header-container {
+    width: 1440px;
+    /* border: 1px solid red; */
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
 }
 
+h1 {
+    font-size: 24px;
+}
+    
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 70px;
+    font-weight: 600;
+    li {
+        color: #3B3B3B;
+
+        span {
+            color: white;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}

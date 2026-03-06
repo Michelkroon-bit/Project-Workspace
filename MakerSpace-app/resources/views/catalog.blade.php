@@ -9,16 +9,26 @@
 <body>
     @include('partials.header')
     <section class="main-section">
-        <h1>Catalog</h1>
         <div class="main-catalog">
             <div class="filtermenu">
                 <div class="searchbarfilter">
                     <input type="text" placeholder="Zoek op titel, studentnummer...">
-                    <button>Ok</button>
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </div>
             <div class="itemsoverview">
-
+                    <div class="catalog-item"></div>
+                    <div class="catalog-item"></div>
+                    <div class="catalog-item"></div>
+                    <div class="catalog-item"></div>
+                    <div class="catalog-item"></div>
+                    <div class="catalog-item"></div>
+                    <div class="catalog-item"></div>
+                    <div class="catalog-item"></div>
+                    <div class="catalog-item"></div>
+                    <div class="catalog-item"></div>
+                    <div class="catalog-item"></div>
+                    <div class="catalog-item"></div>
             </div>
         </div>
     </section>
