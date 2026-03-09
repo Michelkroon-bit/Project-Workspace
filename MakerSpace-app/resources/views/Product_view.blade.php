@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product View</title>
-    <link rel="stylesheet" href="{{ asset('css/header.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/product_view.css') }}">
+    @vite(['resources/scss/app.scss', 'resources/js/app.js'])
 
 
 </head>
 <body>
-    @include('partials.header')
-    
+
+@include('partials.header')
 
 <div class="Product">
 
@@ -31,6 +30,7 @@
 
     <div class="rest">
         <p style="font-size: xx-large; margin-top: 125px; margin-left: 10px; color: white;" class="description"><span>Product</span> Description</p>
+        <p style="font-size: medium; margin-left: 10px; color: white;" class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl.</p>
         <p style="font-size: medium; margin-left: 10px; color: white;" class="price">Estimated print time: 20 hours</p>
 
         <label for="type_of_fillament" style="margin-left: 10px; margin-bottom: ; color: white;">Select a preferred fillament type <br></label>

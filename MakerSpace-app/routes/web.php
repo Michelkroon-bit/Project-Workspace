@@ -24,4 +24,5 @@ Route::get('/product-view', function () {
     return view('Product_view');
 });
 
+
 // ->middleware(['auth', 'verified'])->name('product_view');

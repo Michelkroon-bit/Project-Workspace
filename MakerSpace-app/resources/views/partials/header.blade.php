@@ -1,26 +1,42 @@
-<header class="header-container">
+<head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+            @vite(['resources/scss/app.scss', 'resources/js/app.js'])
+            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+</head>
 
-    <img class="Logo" src="{{ asset('images/logo.png') }}" alt="Logo" width="75" height="75">
-    <h2 class="header-title">MakerSpace</h2>
-
-    <div class="header-right">
-        <a class="inbox" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" id="Notifications--Streamline-Ionic-Filled" height="20" width="20">
-        <path fill="#ffffff" d="M43.3289 32.958c-0.1742 -0.21 -0.3454 -0.42 -0.5134 -0.6226 -2.3101 -2.794 -3.7076 -4.4805 -3.7076 -12.3901 0 -4.0951 -0.9797 -7.4552 -2.9107 -9.9753 -1.4237 -1.8616 -3.3485 -3.2739 -5.8853 -4.3176 -0.0327 -0.0182 -0.0617 -0.042 -0.0861 -0.0704C29.3133 2.5265 26.8164 0.48 24.0002 0.48c-2.8161 0 -5.312 2.0465 -6.2245 5.0989 -0.0243 0.0273 -0.0529 0.0504 -0.085 0.0682 -5.92 2.4371 -8.797 7.1128 -8.797 14.2949 0 7.9129 -1.3955 9.5994 -3.7076 12.3902 -0.168 0.2027 -0.3392 0.4085 -0.5135 0.6227 -0.4502 0.543 -0.7355 1.2037 -0.822 1.9037 -0.0865 0.7 0.0293 1.4101 0.3338 2.0465 0.6478 1.365 2.0286 2.2123 3.6046 2.2123h32.434c1.5687 0 2.9401 -0.8463 3.59 -2.205 0.3059 -0.6364 0.4227 -1.3472 0.3369 -2.0481 -0.0858 -0.7008 -0.3706 -1.3623 -0.821 -1.9063Z" stroke-width="1"></path>
-        <path fill="#ffffff" d="M23.9995 47.52c1.5171 -0.0012 3.0056 -0.413 4.3076 -1.1917 1.302 -0.7788 2.3688 -1.8953 3.0877 -3.2313 0.0338 -0.0641 0.0505 -0.1357 0.0486 -0.2081 -0.0021 -0.0725 -0.0229 -0.1431 -0.0603 -0.2052 -0.0373 -0.0619 -0.0902 -0.1132 -0.1532 -0.1488 -0.0631 -0.0357 -0.1344 -0.0544 -0.2068 -0.0542H16.978c-0.0725 -0.0003 -0.144 0.0182 -0.2072 0.0537 -0.0631 0.0356 -0.1161 0.0868 -0.1536 0.1489 -0.0377 0.062 -0.0584 0.1328 -0.0605 0.2053 -0.0021 0.0725 0.0147 0.1442 0.0486 0.2084 0.7186 1.3358 1.7854 2.4523 3.0873 3.2311 1.3017 0.7786 2.79 1.1906 4.3069 1.1919Z" stroke-width="1"></path>
-        </svg></a>
-
-        <a class="profile" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" id="Profile--Streamline-Ionic-Filled" height="20" width="20">
-        <path fill="#ffffff" d="M24.0002 0.48c-6.6271 0 -12.0001 5.373 -12.0001 12s5.373 12 12.0001 12c6.6271 0 12.0001 -5.373 12.0001 -12s-5.373 -12 -12.0001 -12Z" stroke-width="1"></path>
-        <path fill="#ffffff" d="M24.0002 25.92c-8.8376 0 -16.0001 7.1625 -16.0001 16s7.1625 16 16.0001 16c8.8376 0 16.0001 -7.1625 16.0001 -16s-7.1625 -16 -16.0001 -16Z" stroke-width="1"></path>
-        <path fill="#ffffff" d="M24.0002 28.8c-5.5233 0 -10.0001 4.4767 -10.0001 10s4.4768 10 10.0001 10c5.5233 0 10.0001 -4.4767 10.0001 -10s-4.4768 -10 -10.0001 -10Z" stroke-width="1"></path>
-        </svg></a>
+<header class="header">
+    <div class="header__content">
+        <div class="header__content-logo-container">
+            <img class="Logo" src="{{ asset('images/Logo-large.png') }}" alt="Logo" width="130" height="40">
+            {{-- <a class="Logo" href="homepage.blade.php"><img src="{{ asset('images/Logo-large.png') }}"></a> --}}
+        </div>
+         
+        <div class="header__info">
+            <div class="header__info__container">
+                <span><i class="fa-regular fa-bell"></i></span>
+                <img class="Logo" src="{{ asset('images/user-profilepic.png') }}" alt="profile_picture" width="40" height="40">
+            </div>
+        </div>
     </div>
+    
+
 </header>
 
 <div class="sub-header">
-    <a style="color: #ffffff;" href="#">Dashboard</a>
-    <a style="color: #858585;" href="#">Catalog</a>
-    <a style="color: #858585;" href="#">instellingen</a>
-    <a style="color: #858585;" href="#">FaQ</a>
-</div>
+    <div class="sub-header__container">
+        <div class="sub-header__container__title">
+            <h1>Product view</h1>
+        </div>
+        <div>   
+            <ul>
+                <a href=""><li>Dashboard</li></a>
+                <a href=""><li><span>Catalog</span></li></a>
+                <a href=""><li>Instellingen</li></a>
+                <a href=""><li>FAQ</li></a>
+            </ul>
+        </div>
 
+    </div>
+
+</div>

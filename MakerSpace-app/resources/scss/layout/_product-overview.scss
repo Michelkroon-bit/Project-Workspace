@@ -3,10 +3,16 @@
     --primary-color: #93D2ED;
     --secondary-color: #328F7F;
     --background-color: #121212;
+    --body-background-color: #070707;
     --text-color: #ffffff;
     --hover-color: #1A1A1A;
 }
 
+body {
+    background-color: var(--body-background-color);
+    color: var(--text-color);
+    font-family: "Geologica", sans-serif;
+}
 
 
 .Product{
@@ -92,4 +98,3 @@
     opacity: 1;
     transform: scale(1);
 }
-
