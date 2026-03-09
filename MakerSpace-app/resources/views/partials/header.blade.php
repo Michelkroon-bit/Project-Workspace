@@ -13,6 +13,7 @@
          
         <div class="header__info">
             <div class="header__info__container">
+                <button class="upload-btn"><i class="fa-solid fa-plus"></i> Create</button>
                 <span><i class="fa-regular fa-bell"></i></span>
                 <img class="Logo" src="{{ asset('images/user-profilepic.png') }}" alt="profile_picture" width="40" height="40">
             </div>
