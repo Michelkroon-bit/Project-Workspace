@@ -18,7 +18,8 @@
         <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900">
             <div>
                 <a href="/">
-                    <h1 style="color: white;">workspace</h1>
+                    <!--<h1 style="color: white;">workspace</h1>-->
+                    <img src="{{ asset('images/workspace_logo.jpg') }}" alt="MakerSpace logo" style="height:60px;">
                 </a>
             </div>
 

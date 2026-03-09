@@ -6,7 +6,8 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <h1 style="color: white;">workspace</h1>
+                        <!--<h1 style="color: white;">workspace</h1>-->
+                        <img src="{{ asset('images/workspace_logo.jpg') }}" alt="MakerSpace logo" style="height:60px;">
                     </a>
                 </div>
 
