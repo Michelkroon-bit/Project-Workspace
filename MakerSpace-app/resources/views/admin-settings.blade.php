@@ -70,7 +70,7 @@
         </div>
     </div>
 
-    <div class="rest">
+    <!-- <div class="rest">
         <p style="font-size: xx-large; margin-top: 125px; margin-left: 10px; color: white;" class="description"><span>Product</span> Description</p>
         <p style="font-size: medium; margin-left: 10px; color: white;" class="price">Estimated print time: 2 hours</p>
 
@@ -82,7 +82,7 @@
         </select><br>
     <button style=" margin-top: 20px; margin-left: 10px;" class="order-btn">Order now</button>
 
-    </div>
+    </div> -->
 </div>
     <script src="{{ asset('javascript/admin-settings.js') }}"></script>
 </body>
