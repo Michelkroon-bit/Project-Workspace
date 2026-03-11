@@ -19,7 +19,7 @@
             <div>
                 <a href="/">
                     <!--<h1 style="color: white;">workspace</h1>-->
-                    <img src="{{ asset('images/workspace_logo.jpg') }}" alt="MakerSpace logo" style="height:60px;">
+                    <img src="{{ asset('images/Logo-large_1.webp') }}" alt="MakerSpace logo" style="height:60px;">
                 </a>
             </div>
 
