@@ -12,6 +12,7 @@
 
 @include('partials.header')
 
+
 <div class="Product">
 
     <h1 class="product-name">BoyckeIsEI</h1>
@@ -33,14 +34,17 @@
         <p style="font-size: medium; margin-left: 10px; color: white;" class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl.</p>
         <p style="font-size: medium; margin-left: 10px; color: white;" class="price">Estimated print time: 20 hours</p>
 
+    <form action="{{ route('order-handeling') }}" method="POST">
+        @csrf
+        <input type="hidden" name="product_name" value="BoyckeIsEI">
         <label for="type_of_fillament" style="margin-left: 10px; margin-bottom: ; color: white;">Select a preferred fillament type <br></label>
         <select style="margin-left: 10px; margin-top: 20px; width: 220px;" name="type_of_fillament" id="type_of_fillament">
             <option value="pla">PLA</option>
             <option value="abs">ABS</option>
             <option value="petg">PETG</option>
         </select><br>
-    <button style=" margin-top: 20px; margin-left: 10px;" class="order-btn">Order now</button>
-
+        <button style=" margin-top: 20px; margin-left: 10px;" class="order-btn">Order now</button>
+    </form>
     </div>
 </div>
 

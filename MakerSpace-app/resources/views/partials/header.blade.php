@@ -26,7 +26,7 @@
 <div class="sub-header">
     <div class="sub-header__container">
         <div class="sub-header__container__title">
-            <h1>Product view</h1>
+            <h1>{{ $page_title ?? 'Default Title' }}</h1>
         </div>
         <div>   
             <ul>

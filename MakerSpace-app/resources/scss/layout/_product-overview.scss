@@ -1,22 +1,18 @@
-
-:root {
-    --primary-color: #93D2ED;
-    --secondary-color: #328F7F;
-    --background-color: #121212;
-    --body-background-color: #070707;
-    --text-color: #ffffff;
-    --hover-color: #1A1A1A;
-}
-
 body {
     background-color: var(--body-background-color);
     color: var(--text-color);
-    font-family: "Geologica", sans-serif;
+    font-family: var(--h1-font);
+}
+
+p {
+    font-family: var(--p-font);
+    font-size: var(--p-size);
+    color: var(--p-color);
 }
 
 
 .Product{
-    margin-top: 40px;
+    margin-top: var(--regular-container-padding-top);
     background-color: var(--background-color);
     width: 900px;
     height: 600px;
@@ -26,7 +22,7 @@ body {
     grid-template-columns: 1fr 1fr;
     margin-left: auto ;
     margin-right: auto;
-    border-radius: 10px;
+    border-radius: var(--regular-border-radius);
 }
 
 .Product img{
@@ -46,9 +42,10 @@ body {
 }
 
 .creator{
+    font-family: var(--p-detail-font);
+    font-size: var(--p-detail-size);
     margin-left: 20px;
     color: var(--text-color);
-    font-size: 16px;
     margin-bottom: 5px;
 }
 
@@ -71,6 +68,8 @@ body {
 #type_of_fillament{
     background-color: var(--background-color);
     color: var(--text-color);
+    font-family: var(--p-detail-font);
+    font-size: var(--p-detail-size);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
