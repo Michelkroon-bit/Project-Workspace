@@ -1,0 +1,15 @@
+{
+    "name": "aydin/project-workspace",
+    "autoload": {
+        "psr-4": {
+            "Aydin\\ProjectWorkspace\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aydin",
+            "email": "143701285+AydinDavinci@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
