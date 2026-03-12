@@ -4,7 +4,9 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('Product_view');
+    return view('Product_view');});
+Route::get('/catalog', function () {
+    return view('catalog');
 });
 
 Route::get('/dashboard', function () {
@@ -24,3 +26,4 @@ Route::get('/admin-settings', function () {
     return view('admin-settings');
 });
 
+// ->middleware(['auth', 'verified'])->name('product_view');
