@@ -8,6 +8,7 @@
                     <a href="{{ route('dashboard') }}">
                         <!--<h1 style="color: white;">workspace</h1>-->
                         <img src="{{ asset('images/Logo-large_1.webp') }}" alt="MakerSpace logo" style="height:60px;">
+                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" />
                     </a>
                 </div>
 
@@ -42,6 +43,7 @@
                         <!-- Authentication -->
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
+
                             <x-dropdown-link :href="route('logout')"
                                     onclick="event.preventDefault();
                                                 this.closest('form').submit();">
