@@ -20,28 +20,31 @@
                 <div class="main-section__filter-options">
                     <span>Naam</span>
                     <ul>
-                        <li><i class="fa-solid fa-arrow-up-a-z"></i>A-Z</li>
-                        <li><i class="fa-solid fa-arrow-up-z-a"></i>Z-A</li>
+                        <li><i class="fa-solid fa-arrow-up-a-z "></i><span>A-Z</span></li>
+                        <li><i class="fa-solid fa-arrow-up-z-a"></i><span>Z-A</span></li>
                     </ul>
                     <span>Datum</span>
                     <ul>
-                        <li><i class="fa-solid fa-arrow-up-a-z"></i>nieuw-oud</li>
-                        <li><i class="fa-solid fa-arrow-up-z-a"></i>oud-nieuw</li>
+                        <li><i class="fa-solid fa-arrow-up-a-z"></i><span>nieuw-oud</span></li>
+                        <li><i class="fa-solid fa-arrow-up-z-a"></i><span>oud-nieuw</span></li>
                     </ul>
                 </div>
             </div>
             <div class="main-section__overview">
+                @foreach ($item as $item)
                 <div class="item">
                     <div class="item__info">
                         <div class="item__image">200x150</div>
-                        <div class="item__title">Titel</div>
-                        <div class="item__creator">990XXXXX</div>
+                        
+                        <div class="item__title">{{ $item->item_name }}</div>
+                        <div class="item__creator">{{ $item->item_details }}</div>
                         <div class="item__details">
-                            <div class="item__details-date">dd-mm<br>yyy</div>
+                            <div class="item__details-date">{{ $item->item_date }}</div>
                             <div class="item__details-button"><button>Details</button></div>
                         </div>
                     </div>
                 </div>
+                @endforeach
 
             </div>
         </div>
