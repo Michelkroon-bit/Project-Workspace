@@ -1,4 +1,4 @@
 @tailwind base;
+@import 'login-colors.css';
 @tailwind components;
 @tailwind utilities;
-@import 'login-colors.css';
