@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Order_handeling;
 use App\Http\Controllers\ModelController;
 
+Route::get('/welcome', function () {
+    return view('welcome');
 Route::get('/catalog', function () {
     return view('catalog');
 });
@@ -19,6 +21,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+require __DIR__.'/auth.php';
 // Route::get('/product-view', function () {
 //     return view('Product_view');
 // })->middleware(['auth', 'verified'])->name('product_view');
