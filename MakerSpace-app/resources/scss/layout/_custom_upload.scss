@@ -6,10 +6,9 @@
     border-radius: 10px;
     width: 400px;
     margin: 50px auto;
-   
 }   
 
-h1{
+.custom-upload-title{
     font-family: var(--h1-font);
     font-size: var(--h1-size);
     color: var(--h1-color);
@@ -23,7 +22,8 @@ h1{
     margin-bottom: 20px;
 }
 
-.upload-btn{
+.Upload-file-btn {
+    text-decoration: none;
     position: relative;
     background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
     color: var(--text-color);
@@ -31,16 +31,24 @@ h1{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 250px;
+    width: 100px;
     height: 50px;
-    display: block;
-    margin: auto auto;
+    display: flex;              
+    justify-content: center;    
+    align-items: center;        
+    margin: 20px auto 0 auto;
 
-     margin-top: 20px;
+
+    a {
+        text-decoration: none;
+        color: var(--text-color);
+        display: flex;          
+        align-items: center;
+        gap: 5px;
+    }
 }
 
 .upload-icon{
-
     border: 2px dashed var(--secondary-color);
     background: transparent;
     padding: 40px;
@@ -50,4 +58,10 @@ h1{
     transition: all 0.2s ease;
     user-select: none;
 
+}
+p{
+    font-family: var(--p-detail-font );
+    font-size: var(--p-detail-size);
+    color: var(--p-detail-color);
+    margin-top: 20px;
 }

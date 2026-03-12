@@ -46,6 +46,43 @@
 }
 
 
+.upload-btn {
+    text-decoration: none;
+    display: flex;              
+    justify-content: center;     
+    align-items: center;         
+    text-align: center;
+    font-size: 14px;
+    background-color: #1A1A1A;
+    border: none;
+    width: 120px;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+
+    i {
+        margin-right: 5px;
+        align-items: center;
+    }
+    
+    a {
+        color: white;
+        display: flex;           
+        align-items: center;
+        gap: 5px;                
+    }
+
+    &:hover {
+        border: 2px dashed white;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
+
+
+
+
 .sub-header {
     height: 60px;
     background-color: #1A1A1A;

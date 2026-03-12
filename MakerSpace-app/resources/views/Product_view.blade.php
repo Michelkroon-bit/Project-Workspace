@@ -12,7 +12,6 @@
 
 @include('partials.header')
 
-
 <div class="Product">
 
     <h1 class="product-name">BoyckeIsEI</h1>
@@ -36,7 +35,6 @@
 
     <form action="{{ route('order-handeling') }}" method="POST">
         @csrf
-        <input type="hidden" name="product_name" value="BoyckeIsEI">
         <label for="type_of_fillament" style="margin-left: 10px; margin-bottom: ; color: white;">Select a preferred fillament type <br></label>
         <select style="margin-left: 10px; margin-top: 20px; width: 220px;" name="type_of_fillament" id="type_of_fillament">
             <option value="pla">PLA</option>

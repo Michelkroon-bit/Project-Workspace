@@ -23,9 +23,14 @@ Route::middleware('auth')->group(function () {
 //     return view('Product_view');
 // })->middleware(['auth', 'verified'])->name('product_view');
 
-Route::POST('Order-page', function () {
+Route::get('/Order-page', function () {
     return view('Order_page');
 })->middleware(['auth', 'verified'])->name('order-page');
+
+
+Route::get('/Order_submitted_screen', function () {
+    return view('Order_page');
+})->middleware(['auth', 'verified'])->name('order_submitted_screen');   
 
 
 Route::post('/order-handeling', [Order_handeling::class, 'order'])->name('order-handeling');
