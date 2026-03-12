@@ -12,6 +12,18 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Scripts -->
+        @vite(['resources/css/app.css', 'resources/css/login-colors.css', 'resources/js/app.js'])
+    </head>
+    <body class="font-sans text-white antialiased dark">
+        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-[#070707] dark:bg-[#070707]">
+            <div>
+                <a href="/">
+                    <!--<h1 style="color: white;">workspace</h1>-->
+                    <img src="{{ asset('images/Logo-large_1.webp') }}" alt="MakerSpace logo" style="height:60px;">
+                </a>
+            </div>
+
+            <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-[#121212] dark:bg-[#121212] shadow-md overflow-hidden sm:rounded-lg border border-gray-700">
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans text-gray-900 antialiased">
