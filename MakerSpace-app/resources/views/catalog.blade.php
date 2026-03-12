@@ -31,20 +31,18 @@
                 </div>
             </div>
             <div class="main-section__overview">
-                @foreach ($item as $item)
                 <div class="item">
                     <div class="item__info">
                         <div class="item__image">200x150</div>
                         
-                        <div class="item__title">{{ $item->item_name }}</div>
-                        <div class="item__creator">{{ $item->item_details }}</div>
+                        <div class="item__title">Title</div>
+                        <div class="item__creator">Creator</div>
                         <div class="item__details">
-                            <div class="item__details-date">{{ $item->item_date }}</div>
+                            <div class="item__details-date">dd-mm-yyyy</div>
                             <div class="item__details-button"><button>Details</button></div>
                         </div>
                     </div>
                 </div>
-                @endforeach
 
             </div>
         </div>
