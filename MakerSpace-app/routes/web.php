@@ -4,6 +4,14 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Order_handeling;
 use App\Http\Controllers\ModelController;
+use App\Http\Controllers\PageController;
+Route::get('/', function () {
+    return view('welcome');
+});
+
+
+
+Route::get('/catalog', [PageController::class, 'catalog'])->name('catalog');
 
 Route::get('/catalog', function () {
     return view('catalog');
@@ -45,5 +53,3 @@ Route::get('/product-view', function () {
 Route::get('/custom_upload', [ModelController::class, 'custom_upload'])->name('model.custom_upload');
 
 
-
-// ->middleware(['auth', 'verified'])->name('product_view');
